@@ -89,7 +89,7 @@ public class CarrinhoDeCompras {
 
 - Permite representar interfaces funcionais (interfaces com um único método abstrato) possibilitando escrever código no estilo funcional.
 - As interfaces funcionais servem de base para o uso de expressões lambda.
-- É uma função sem declaração, isto é, não precisa colocar nome, tipo de retorno ou modificador de acesso. 
+- É uma função sem declaração, isto é, não precisa colocar nome, tipo de retorno ou modificador de acesso.
 - A ideia é que o método seja declarado no mesmo lugar em que será usado.
 - Possui sintaxe definida como: <code>(argumento) -> (corpo)</code>.
 
