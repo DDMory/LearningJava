@@ -16,3 +16,7 @@
 
   - `BinaryOperator<T>`: Representa uma operação que combina dois argumentos do tipo T e retorna um resultado do mesmo
     tipo T. É usada para realizar operações de redução em pares de elementos, como somar números ou combinar objetos.
+
+## Creditos:
+
+- Creditos destinados a tutora *Camila Calvacante* pela criação do github original de onde esse conteudo foi tirado. disponivel em: [Functional Interface](https://github.com/digitalinnovationone/ganhando_produtividade_com_Stream_API_Java/blob/master/src/functional_interface/README.md)
