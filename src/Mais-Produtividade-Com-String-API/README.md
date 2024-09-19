@@ -120,3 +120,6 @@ public class OrdenacaoPessoa {
   }
 }
 ```
+## Creditos.
+
+- Creditos destinados a tutora *Camila Calvacante* pela criação do github original de onde esse conteudo foi tirado. disponivel em: [Ganhando Produtividade com Stream API e Java](https://github.com/digitalinnovationone/ganhando_produtividade_com_Stream_API_Java/blob/master/README.md)
