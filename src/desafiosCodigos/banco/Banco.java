@@ -45,11 +45,15 @@ public class Banco {
                     oBanco.adicionarConta(conta);
                     break;
                 case 2:
+                    System.out.println("DIGITE UM NOME PARA A CONTA:");
+                    cliente = new Cliente(terminal.nextLine());
+                    conta = new ContaPoupanca(cliente);
+                    oBanco.adicionarConta(conta);
                     break;
                 case 3:
                     break;
                 case 4:
-                    break:
+                    break;
                 default:
                     System.out.println("OPÇÃO INVALIDA!!");
             }
