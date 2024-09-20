@@ -58,9 +58,80 @@ public class Banco {
                     break;
                 }
             }
-            if(contaEncontrada == false){
+            if(!contaEncontrada){
                 System.out.printf("CONTA %s NÃO ENCONTRADA", nome);
             }
+        }else{
+            System.out.println("NENGUMA CONTA NO BANCO");
+        }
+    }
+
+    public void sacarDaConta(String nome, double valor){
+        if(!contas.isEmpty()){
+
+            boolean contaEncontrada = false;
+            for(Conta c:contas){
+                if(c.cliente.getNome().equalsIgnoreCase(nome)){
+                    contaEncontrada=true;
+                    c.sacar(valor);
+                    break;
+                }
+            }
+            if(!contaEncontrada){
+                System.out.printf("CONTA %s NÃO ENCONTRADA", nome);
+            }
+        }else{
+            System.out.println("NENGUMA CONTA NO BANCO");
+        }
+    }
+
+    public void depositarNaConta(String nome, double valor){
+        if(!contas.isEmpty()){
+
+            boolean contaEncontrada = false;
+            for(Conta c:contas){
+                if(c.cliente.getNome().equalsIgnoreCase(nome)){
+                    contaEncontrada=true;
+                    c.depositar(valor);
+                    break;
+                }
+            }
+            if(!contaEncontrada){
+                System.out.printf("CONTA %s NÃO ENCONTRADA", nome);
+            }
+        }else{
+            System.out.println("NENGUMA CONTA NO BANCO");
+        }
+    }
+
+    public void transferirSaldo(String nomeContaOrigem,String nomeContaDestino, double valor){
+        if(!contas.isEmpty()){
+            Conta origem = null;
+            Conta destino = null;
+            boolean contaDestinoEncontrada = false;
+            boolean contaOrigemEncontrada = false;
+
+            for(Conta c:contas){
+                if(c.cliente.getNome().equalsIgnoreCase(nomeContaOrigem)){
+                    contaOrigemEncontrada=true;
+                    origem = c;
+                }
+                if(c.cliente.getNome().equalsIgnoreCase(nomeContaDestino)){
+                    contaDestinoEncontrada=true;
+                    destino = c;
+                }
+                if(destino != null && origem !=null)
+                    break;
+            }
+
+            if(!contaDestinoEncontrada){
+                System.out.printf("CONTA %s NÃO ENCONTRADA", nomeContaOrigem);
+            } else if(!contaOrigemEncontrada){
+                System.out.printf("CONTA %s NÃO ENCONTRADA", nomeContaDestino);
+            } else{
+                origem.transferir(valor,destino);
+            }
+
         }else{
             System.out.println("NENGUMA CONTA NO BANCO");
         }
@@ -69,6 +140,7 @@ public class Banco {
     public String getNome() {
         return nome;
     }
+
 
     public void setNome(String nome) {
         this.nome = nome;

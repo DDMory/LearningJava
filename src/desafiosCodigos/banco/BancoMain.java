@@ -24,7 +24,10 @@ public class BancoMain {
                      3- deletar conta do banco
                      4- listar contas
                      5- Buscar Conta
-                     6- sair da aplicação""");
+                     6- sacar da conta
+                     7- depositar da conta
+                     8- transferir da conta
+                     9- sair da aplicação""");
 
             op = terminal.nextInt();
             switch (op){
@@ -60,12 +63,35 @@ public class BancoMain {
                     oBanco.imprimirContaEspecifica(nome);
                     break;
                 case 6:
+                    System.out.println("NOME DA CONTA A SER BUSCADA:");
+                    nome = terminal.next() + terminal.nextLine();
+                    System.out.println("DIGITE O VALOR QUE DESEJA SACAR:");
+                    valor = terminal.nextDouble();
+                    oBanco.sacarDaConta(nome,valor);
+                    break;
+                case 7:
+                    System.out.println("NOME DA CONTA A SER BUSCADA:");
+                    nome = terminal.next() + terminal.nextLine();
+                    System.out.println("DIGITE O VALOR QUE DESEJA DEPOSITAR:");
+                    valor = terminal.nextDouble();
+                    oBanco.depositarNaConta(nome,valor);
+                    break;
+                case 8:
+                    System.out.println("NOME DA CONTA DE ORIGEM: ");
+                    String nomeOrigem = terminal.next() + terminal.nextLine();
+                    System.out.println("NOME DA CONTA DE DESTINO:");
+                    String nomeDestino = terminal.next() + terminal.nextLine();
+                    System.out.println("DIGITE O VALOR QUE DESEJA TRANSFERIR:");
+                    valor = terminal.nextDouble();
+                    oBanco.transferirSaldo(nomeOrigem,nomeDestino,valor);
+                    break;
+                case 9:
                     break;
                 default:
                     System.out.println("OPÇÃO INVALIDA!!\n");
             }
 
-        }while(op != 6);
+        }while(op != 9);
 
     }
 }
