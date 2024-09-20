@@ -1,4 +1,6 @@
-package src.desafiosCodigos.banco;
+package src.desafiosCodigos.banco.contracts;
+
+import src.desafiosCodigos.banco.models.Conta;
 
 public interface ContaContrato {
     abstract void sacar(double valor);

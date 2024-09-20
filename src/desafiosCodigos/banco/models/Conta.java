@@ -1,6 +1,8 @@
-package src.desafiosCodigos.banco;
+package src.desafiosCodigos.banco.models;
 
-public abstract class Conta implements ContaContrato{
+import src.desafiosCodigos.banco.contracts.ContaContrato;
+
+public abstract class Conta implements ContaContrato {
 
     private static int AGENCIA_PADRAO = 1;
     private static int SEQUENCIAL = 1;
@@ -18,6 +20,10 @@ public abstract class Conta implements ContaContrato{
 
     public double getSaldo() {
         return saldo;
+    }
+
+    public void setSaldo(double saldo) {
+        this.saldo = saldo;
     }
 
     public int getNumero() {

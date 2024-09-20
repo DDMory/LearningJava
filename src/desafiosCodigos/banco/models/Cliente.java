@@ -1,4 +1,4 @@
-package src.desafiosCodigos.banco;
+package src.desafiosCodigos.banco.models;
 
 public class Cliente {
     private String nome;
