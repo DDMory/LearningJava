@@ -3,6 +3,10 @@ package src.desafiosCodigos.banco;
 public class Cliente {
     private String nome;
 
+    public Cliente(String nome){
+        this.nome = nome;
+    }
+
     public String getNome() {
         return nome;
     }
@@ -11,4 +15,8 @@ public class Cliente {
         this.nome = nome;
     }
 
+    @Override
+    public String toString() {
+        return nome +'\n';
+    }
 }
