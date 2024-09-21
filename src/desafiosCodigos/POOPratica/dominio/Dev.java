@@ -2,6 +2,7 @@ package src.desafiosCodigos.POOPratica.dominio;
 
 import java.util.LinkedHashSet;
 import java.util.Objects;
+import java.util.Optional;
 import java.util.Set;
 
 public class Dev {
@@ -9,11 +10,27 @@ public class Dev {
     private Set<Conteudo> conteudosInscritos = new LinkedHashSet<>();
     private Set<Conteudo> conteudosConcluidos = new LinkedHashSet<>();
 
-    public void inscerverBootcamp(Bootcamp bo){};
+    public void inscerverBootcamp(Bootcamp bo){
+        this.conteudosInscritos.addAll(bo.getConteudos());
+        bo.getDevsInscritos().add(this);
+    };
 
-    public void progredir(){};
+    public void progredir(){
+        Optional<Conteudo> conteudo = this.conteudosInscritos.stream().findFirst();
+        if(conteudo.isPresent()){
+            this.conteudosConcluidos.add(conteudo.get());
+            this.conteudosInscritos.remove(conteudo.get());
+        } else{
+            System.err.println("VC NÃO ESTÁ MATRICULADO EM NENHUM CONTEUDO!!\n");
+        }
+    };
 
-    public void calcularTotalXP(){};
+    public double calcularTotalXP(){
+        return this.conteudosConcluidos
+                .stream()
+                .mapToDouble(Conteudo::calcularXP)
+                .sum();
+    };
 
     public String getNome() {
         return nome;
