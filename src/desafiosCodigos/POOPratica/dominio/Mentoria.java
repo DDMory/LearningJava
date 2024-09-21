@@ -1,0 +1,44 @@
+package src.desafiosCodigos.POOPratica.dominio;
+
+import java.time.LocalDate;
+
+public class Mentoria {
+    private String titulo;
+    private String descricao;
+    private LocalDate data;
+
+    public Mentoria() {}
+
+    @Override
+    public String toString() {
+        return "Monitoria{" +
+                "titulo='" + titulo + '\'' +
+                ", descricao='" + descricao + '\'' +
+                ", data=" + data +
+                '}';
+    }
+
+    public String getTitulo() {
+        return titulo;
+    }
+
+    public void setTitulo(String titulo) {
+        this.titulo = titulo;
+    }
+
+    public String getDescricao() {
+        return descricao;
+    }
+
+    public void setDescricao(String descricao) {
+        this.descricao = descricao;
+    }
+
+    public LocalDate getData() {
+        return data;
+    }
+
+    public void setData(LocalDate data) {
+        this.data = data;
+    }
+}
