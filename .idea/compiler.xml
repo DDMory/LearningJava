@@ -7,7 +7,11 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="quick-start-maven" />
+        <module name="quick-start-maven (1)" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="junit5-exemplos" target="11" />
+    </bytecodeTargetLevel>
   </component>
 </project>
