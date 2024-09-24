@@ -10,7 +10,7 @@ public class PessoaTest {
     @Test
     public void deveCalcularIdadeCorretamente() {
         Pessoa jessica = new Pessoa("Jéssica", LocalDateTime.of(2000, 1, 1, 15, 0, 0));
-        Assert.assertEquals(22, jessica.getIdade());
+        Assert.assertEquals(24, jessica.getIdade());
     }
 
     @Test
