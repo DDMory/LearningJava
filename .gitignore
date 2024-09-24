@@ -1,4 +1,4 @@
 out/
 !**/src/main/**/out/
 !**/src/test/**/out/
-/src/mavenPratices/firstMaven/quick-start-maven/target/
+/src/mavenPratices/quick-start-maven/target/
