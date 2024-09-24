@@ -2,7 +2,7 @@
 
 ### *Defeito, Erro e Falha*:
 
-- <p><b>Defeito</b>: Chamado de <i><b>bug</b></i></b>, é causado na fase de desenvolvimento do software.</p>
+- <p><b>Defeito</b>: Chamado de <i><b>bug</b></i>, é causado na fase de desenvolvimento do software.</p>
 
 - <p><b>Erro</b>: Resultado do <b><i>defeito</i></b> quando há uma <i><b>diferença entre o valor obtido e o valor esperado</b></i>.</p>
 
