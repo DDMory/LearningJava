@@ -7,6 +7,7 @@
         <option value="$PROJECT_DIR$/src/mavenPratices/quick-start-maven/pom.xml" />
         <option value="$PROJECT_DIR$/src/testeUnitariosJUnit/junit5-exemplos-master/pom.xml" />
         <option value="$PROJECT_DIR$/src/testeUnitariosJUnit/quick-start-maven/pom.xml" />
+        <option value="$PROJECT_DIR$/src/desenvolvendoTestesComMockito/quick-start-mockito/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

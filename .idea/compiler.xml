@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="quick-start-maven" />
         <module name="quick-start-maven (1)" />
+        <module name="quick-start-mockito" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

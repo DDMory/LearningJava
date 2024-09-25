@@ -1,5 +1,6 @@
 out/
 !**/src/main/**/out/
 !**/src/test/**/out/
-/src/mavenPratices/quick-start-maven/target/
-/src/testeUnitariosJUnit/quick-start-maven/target/
+/src/mavenPratices/quick-start-maven/target
+/src/testeUnitariosJUnit/quick-start-maven/target
+src/desenvolvendoTestesComMockito/quick-start-mockito/target
