@@ -10,6 +10,8 @@ import org.mockito.junit.jupiter.MockitoExtension;
 
 import java.time.LocalDate;
 
+import static org.mockito.ArgumentMatchers.anyString;
+
 @ExtendWith(MockitoExtension.class)
 public class CadastrarPessoaTest {
 
@@ -20,14 +22,26 @@ public class CadastrarPessoaTest {
     private CadastrarPessoa cadastrarPessoa;
 
     @Test
-    void validarDadosDeCadastro(){
-        DadosLocalizacao dadosLocalizacao = new DadosLocalizacao("MG", "Patis de Minas", "RUA 32", "CASA", "Centro Metropolitano");
-        Mockito.when(apiDosCorreios.buscaDadosComBaseNoCep("12345678")).thenReturn(dadosLocalizacao);
-        Pessoa pessoa = cadastrarPessoa.cadastrarPessoa("Jose","02212326898", LocalDate.now(), "12345678" );
+    void cadastrarPessoa() {
 
-        Assertions.assertEquals("Jose", pessoa.getNome());
-        Assertions.assertEquals("02212326898", pessoa.getDocumento());
-        Assertions.assertEquals("MG", pessoa.getEndereco().getUf());
-        Assertions.assertEquals("CASA", pessoa.getEndereco().getComplemento());
+        DadosLocalizacao dadosLocalizacao = new DadosLocalizacao("MG", "Uberaba", "Rua Castro Alves", "Casa", "Nova Floresta");
+
+        Mockito.when(apiDosCorreios.buscaDadosComBaseNoCep(anyString())).thenReturn(dadosLocalizacao);
+
+        Pessoa jose = cadastrarPessoa.cadastrarPessoa("José", "28578527976", LocalDate.of(1947, 1, 15), "69317300");
+
+        DadosLocalizacao enderecoJose = jose.getEndereco();
+        Assertions.assertEquals(dadosLocalizacao.getBairro(), enderecoJose.getBairro());
+        Assertions.assertEquals(dadosLocalizacao.getCidade(), enderecoJose.getCidade());
+        Assertions.assertEquals(dadosLocalizacao.getUf(), enderecoJose.getUf());
     }
+
+    @Test
+    void tentaCadastrarPessoaMasSistemaDosCorreiosFalha() {
+
+        Mockito.when(apiDosCorreios.buscaDadosComBaseNoCep(anyString())).thenThrow(RuntimeException.class);
+
+        Assertions.assertThrows(RuntimeException.class, () -> cadastrarPessoa.cadastrarPessoa("José", "28578527976", LocalDate.of(1947, 1, 15), "69317300"));
+    }
+
 }
