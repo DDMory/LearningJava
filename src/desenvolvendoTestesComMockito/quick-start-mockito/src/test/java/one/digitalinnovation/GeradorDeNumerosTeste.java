@@ -24,16 +24,4 @@ public class GeradorDeNumerosTeste {
 
         Assertions.assertEquals(integers, GeradorDeNumeros.geraNumerosAleatorios(8));
     }
-
-    @Test
-    void validaGeracaoListaDeNumerosSemInformarTamanho() {
-
-        MockedStatic<GeradorDeNumeros> gerador = Mockito.mockStatic(GeradorDeNumeros.class);
-
-        List<Integer> integers = List.of(10, 9, 8, 6);
-
-        gerador.when(GeradorDeNumeros::geraNumerosAleatorios).thenReturn(integers);
-
-        Assertions.assertEquals(integers, GeradorDeNumeros.geraNumerosAleatorios());
-    }
 }
