@@ -27,4 +27,13 @@
 - Flexibilidade;
 - Escalabilidade;
 - Alta Performance.
+
+### ***Alguns Tipos de Banco de Dados NoSQL***:
+
+- Grafos: 
+- Colunas:
+- Chave-valor:
+- Documentos.
+
+
 ---
