@@ -26,3 +26,20 @@ de grande volume de dados em que se deseja obter um resultado.
 ## Introdução Docker
 O docker é uma plataforma de codigo aberto que tem alto desempenho, ele garante que seja possivel criar e administrar o ambientes de maneira isolada.
 Tem por objetivo permitir a criação de teste e implemente aplicações em ambientes separados, um processo chamado conteinerzação.
+
+---
+### Schema Desing, Caracteristicas:
+
+- Embedding:
+  - Vantagens:
+    - Consulta Informações em uma unica query
+    - Atualiza o registro em uma unica operação
+  - Contras:
+    - Limite maximo de 16 MB por documento
+- Referencia:
+  - Vantagens
+    - Documentos pequenos
+    - Não duplica informações
+    - Recomendado quando os dados não são acessados em todas as consultas
+  - Contras:
+    - Duas ou mais queries ou utilização da funcionalidade $lookup
