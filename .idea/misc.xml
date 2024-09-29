@@ -8,6 +8,7 @@
         <option value="$PROJECT_DIR$/src/testeUnitariosJUnit/junit5-exemplos-master/pom.xml" />
         <option value="$PROJECT_DIR$/src/testeUnitariosJUnit/quick-start-maven/pom.xml" />
         <option value="$PROJECT_DIR$/src/desenvolvendoTestesComMockito/quick-start-mockito/pom.xml" />
+        <option value="$PROJECT_DIR$/src/introduçãoSpringBoot/primeiros-passos/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
@@ -16,7 +17,7 @@
       </set>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="17" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_21" default="true" project-jdk-name="17" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
 </project>

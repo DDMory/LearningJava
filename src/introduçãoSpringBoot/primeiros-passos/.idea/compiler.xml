@@ -6,16 +6,9 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="quick-start-maven" />
         <module name="primeiros-passos" />
-        <module name="quick-start-maven (1)" />
-        <module name="quick-start-mockito" />
-        <module name="quick-start-maven (2)" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="junit5-exemplos" target="11" />
-    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">

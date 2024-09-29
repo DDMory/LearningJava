@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/Trilha-Java-Claro.iml" filepath="$PROJECT_DIR$/.idea/Trilha-Java-Claro.iml" />
+      <module fileurl="file://$PROJECT_DIR$/src/introduçãoSpringBoot/primeiros-passos/primeiros-passos.iml" filepath="$PROJECT_DIR$/src/introduçãoSpringBoot/primeiros-passos/primeiros-passos.iml" />
     </modules>
   </component>
 </project>

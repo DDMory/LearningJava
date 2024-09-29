@@ -4,3 +4,5 @@ out/
 /src/mavenPratices/quick-start-maven/target
 /src/testeUnitariosJUnit/quick-start-maven/target
 src/desenvolvendoTestesComMockito/quick-start-mockito/target
+/src/introduçãoSpringBoot/primeiros-passos/target/
+/src/introduçãoSpringBoot/primeiros-passos/HELP.md
