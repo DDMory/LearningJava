@@ -1,4 +1,4 @@
-package dio.springBoot.app;
+package dio.springBoot.beans_x_Components.app;
 
 import com.google.gson.Gson;
 import org.springframework.beans.factory.annotation.Autowired;

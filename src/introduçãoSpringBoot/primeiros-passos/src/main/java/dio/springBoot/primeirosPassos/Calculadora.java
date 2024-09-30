@@ -1,4 +1,4 @@
-package dio.springBoot;
+package dio.springBoot.primeirosPassos;
 
 import org.springframework.stereotype.Component;
 

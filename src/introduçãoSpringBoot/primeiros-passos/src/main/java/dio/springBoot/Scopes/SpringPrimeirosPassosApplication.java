@@ -1,7 +1,6 @@
-package dio.springBoot;
+package dio.springBoot.Scopes;
 
-import dio.springBoot.app.ConversorJson;
-import dio.springBoot.app.ViaCepResponse;
+import dio.springBoot.Scopes.app.SistemaMensagem;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -14,11 +13,11 @@ public class SpringPrimeirosPassosApplication {
         SpringApplication.run(SpringPrimeirosPassosApplication.class, args);
     }
     @Bean
-    public CommandLineRunner run(ConversorJson conversor) throws Exception {
+    public CommandLineRunner run(SistemaMensagem sistema) throws Exception {
         return args -> {
-            String json = "{\"cep\": \"01001-000\",\"logradouro\": \"Praça da Sé\",\"localidade\": \"São Paulo\"}";
-            ViaCepResponse response = conversor.converter(json);
-            System.out.println("Dados do CEP: " + response);
+            sistema.enviarConfirmacaoCadastro();
+            sistema.enviarMensagemBoasVindas();
+            sistema.enviarConfirmacaoCadastro();
         };
     }
 }
