@@ -14,11 +14,13 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="aula-spring-data-jpa" target="21" />
       <module name="junit5-exemplos" target="11" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="aula-spring-data-jpa" options="-parameters" />
       <module name="primeiros-passos" options="-parameters" />
     </option>
   </component>
