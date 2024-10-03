@@ -13,4 +13,9 @@ manutenção de software orientado a objetos
 
 ### ***Padrão Criacional: SIngleton***
 
-Permitir a criação de uma unica instancia de uma classe e fornecer um modo para recupera-lo
+Permitir a criação de uma unica instancia de uma classe e fornecer um modo
+para recupera-lo
+
+### ***Padrão Comportamental: Strategy***
+
+Simplificar a variação de algoritmos para a resolução de um mesmo problema
