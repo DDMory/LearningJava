@@ -19,3 +19,9 @@ para recupera-lo
 ### ***Padrão Comportamental: Strategy***
 
 Simplificar a variação de algoritmos para a resolução de um mesmo problema
+
+### ***Padrão Estrutural: Facade***
+
+PRover uma interfae que reduza a complexidade nas integrações com 
+subsistemas
+
