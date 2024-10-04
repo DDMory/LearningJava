@@ -10,10 +10,12 @@
         <option value="$PROJECT_DIR$/src/desenvolvendoTestesComMockito/quick-start-mockito/pom.xml" />
         <option value="$PROJECT_DIR$/src/introduçãoSpringBoot/primeiros-passos/pom.xml" />
         <option value="$PROJECT_DIR$/src/introduçãoSpringBoot/aula-spring-data-jpa/pom.xml" />
+        <option value="$PROJECT_DIR$/src/desafiosCodigos/designPatternsJava/lab-padroes-projeto-spring/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
       <set>
+        <option value="$PROJECT_DIR$/src/desafiosCodigos/designPatternsJava/lab-padroes-projeto-spring/pom.xml" />
         <option value="$PROJECT_DIR$/src/introduçãoSpringBoot/aula-spring-data-jpa/pom.xml" />
         <option value="$PROJECT_DIR$/src/testeUnitariosJUnit/junit5-exemplos-master/pom.xml" />
       </set>
