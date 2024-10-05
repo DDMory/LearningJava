@@ -10,6 +10,7 @@
         <module name="primeiros-passos" />
         <module name="quick-start-maven (1)" />
         <module name="quick-start-mockito" />
+        <module name="lab-claro-java" />
         <module name="quick-start-maven (2)" />
       </profile>
     </annotationProcessing>
@@ -22,6 +23,7 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="aula-spring-data-jpa" options="-parameters" />
+      <module name="lab-claro-java" options="-parameters" />
       <module name="lab-padroes-projeto-spring" options="-parameters" />
       <module name="primeiros-passos" options="-parameters" />
     </option>
