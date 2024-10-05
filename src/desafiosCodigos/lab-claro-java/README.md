@@ -1,4 +1,13 @@
-# ***Diagrama - Domain***
+# Implementação de API usando SB3 e Java17
+
+## ***Tecnologias usadas***
+
+- Java 17
+- Spring Boot 3
+- Spring Data JPA
+- OpenAPI (Swwagger)
+
+## ***Diagrama - Domain***
 
 ```mermaid
 classDiagram
