@@ -1,38 +1,41 @@
+# ***Diagrama - Domain***
 
-```Mermaid
+```mermaid
 classDiagram
-  class User {
+
+User "1" *-- "1" Account
+User "1" *-- "N" Feature
+User "1" *-- "1" Card
+User "1" *-- "N" News
+ 
+class User {
     -String name
     -Account account
     -Feature[] features
     -Card card
     -News[] news
-  }
+}
 
-  class Account {
+class Account {
     -String number
     -String agency
     -Number balance
     -Number limit
-  }
+}
 
-  class Feature {
+class Feature {
     -String icon
     -String description
-  }
+}
 
-  class Card {
+class Card {
     -String number
     -Number limit
-  }
+}
 
-  class News {
+class News {
     -String icon
     -String description
-  }
-
-  User "1" *-- "1" Account
-  User "1" *-- "N" Feature
-  User "1" *-- "1" Card
-  User "1" *-- "N" News
+}
+  
 ```
