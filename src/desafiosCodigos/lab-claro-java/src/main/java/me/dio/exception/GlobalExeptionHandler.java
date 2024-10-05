@@ -30,6 +30,5 @@ public class GlobalExeptionHandler {
         logger.error(message, unexpectedException);
         return new ResponseEntity<>(message, HttpStatus.INTERNAL_SERVER_ERROR);
     }
-    
 
 }
